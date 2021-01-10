@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <script src="src/calculator.js"></script>
+  </head>
+  <body>
+	<div class="container">
+		 <div class="calc-body">
+		  <div class="calc-screen">
+			<div id="calc-operation">0</div>
+			<div id="calc-typed">0</div>
+		  </div>
+		  <div class="calc-button-row">
+			<button class="button c" onclick="reset()">C</button>
+			<button class="button l" onclick="update_operator('!=')">≠</button>
+			<button class="button l" onclick="update_operator('%')">%</button>
+			<button class="button l" onclick="update_operator('/')">/</button>
+		  </div>
+		  <div class="calc-button-row">
+			<button class="button" onclick="update_typed('7')">7</button>
+			<button class="button" onclick="update_typed('8')">8</button>
+			<button class="button" onclick="update_typed('9')">9</button>
+			<button class="button l" onclick="update_operator('*')">x</button>
+		  </div>
+		  <div class="calc-button-row">
+			<button class="button" onclick="update_typed('4')">4</button>
+			<button class="button" onclick="update_typed('5')">5</button>
+			<button class="button" onclick="update_typed('6')">6</button>
+			<button class="button l" onclick="update_operator('-')">−</button>
+		  </div>
+		  <div class="calc-button-row">
+			<button class="button" onclick="update_typed('1')">1</button>
+			<button class="button" onclick="update_typed('2')">2</button>
+			<button class="button" onclick="update_typed('3')">3</button>
+			<button class="button l" onclick="update_operator('+')">+</button>
+		  </div>
+		  <div class="calc-button-row">
+			<button class="button" onclick="update_typed('.')">.</button>
+			<button class="button" onclick="update_typed('0')">0</button>
+			<div class="button">
+			  </div>
+				<button class="button l" onclick="calculate()">=</button>
+			</div>
+		  </div> 
+		</div>
+  </body>
+</html>
